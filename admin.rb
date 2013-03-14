@@ -30,6 +30,10 @@ configure do
   set :sprockets, env
   set :views, 'app/views'
   set :erb, :escape_html => true
+
+  set :username, ENV['AB_USER']
+  set :password, ENV['AB_PASSWORD']
+
 end
 
 helpers do

@@ -15,7 +15,7 @@ Requirements:
 * Ruby 1.9.3
 * Mongo
 
-The default username and password are `guard` / `llama`. Change these in `config.yml`, unless you want everybody to access your test results. SSL is required in an production environment by default.
+The default username and password are `guard` / `llama`. Change these in `config.yml`, unless you want everybody to access your test results. Alternatively you can set the ENV variables AB_USER and AB_PASSWORD (heroku config:add AB_USER=bla AB_PASSWORD=blub). SSL is required in an production environment by default.
 
 To run locally:
 
