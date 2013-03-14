@@ -1,37 +1,50 @@
-<script src="/v1/abba.js" type="text/javascript" charset="utf-8"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Experteer A/B - Step 1</title>
 
-<h1 id="test">The control was chosen!</h1>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+ 
+    <script src="/v1/abba.js" type="text/javascript" charset="utf-8"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 
-<script type="text/javascript" charset="utf-8">
-  Abba('My Checkout')
-    .control('Control', {weight: 5})
-    .variant('Variant 1', {weight: 10}, function(){
-      $('#test').text('Variant 1 was chosen!');
-    })
-    .variant('Variant 2', {weight: 9}, function(){
-      $('#test').text('Variant 2 was chosen!');
-    })
-    .start();
+  </head>
+  <body style="background-color: lightgray">
+ 
+    <h1 id="test">The control was chosen!</h1>
 
-  // Reset test
-  // Abba('My Checkout').reset();
+    <script type="text/javascript" charset="utf-8">
+      Abba('My Checkout')
+        .control('Control', {weight: 5})
+        .variant('Variant 1', {weight: 10}, function(){
+          $('#test').text('Variant 1 was chosen!');
+        })
+        .variant('Variant 2', {weight: 9}, function(){
+          $('#test').text('Variant 2 was chosen!');
+        })
+        .start();
 
-  // Continue a previously started test
-  // Abba('My Checkout')
-  //   .control()
-  //   .variant('Variant 1', function(){
-  //     $('#test').text('Variant 1 was chosen!');
-  //   })
-  //   .variant('Variant 2', function(){
-  //     $('#test').text('Variant 2 was chosen!');
-  //   })
-  //   .continue();
+      // Reset test
+      // Abba('My Checkout').reset();
 
-  // Chose a specific variant
-  // Abba('My Checkout').start('Another var');
-</script>
+      // Continue a previously started test
+      // Abba('My Checkout')
+      //   .control()
+      //   .variant('Variant 1', function(){
+      //     $('#test').text('Variant 1 was chosen!');
+      //   })
+      //   .variant('Variant 2', function(){
+      //     $('#test').text('Variant 2 was chosen!');
+      //   })
+      //   .continue();
 
-<p>
-  <a href="complete.html" class="complete">Now complete the test.</a>
-</p>
+      // Chose a specific variant
+      // Abba('My Checkout').start('Another var');
+    </script>
+
+    <p>
+      <a id="finish" href="complete.html" class="complete">Now complete the test.</a>
+    </p>
+ 
+  </body>
+</html>
