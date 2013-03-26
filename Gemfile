@@ -12,3 +12,5 @@ gem 'sprockets'
 gem 'sprockets-commonjs'
 gem 'coffee-script'
 gem 'stylus'
+
+gem 'newrelic_rpm'
